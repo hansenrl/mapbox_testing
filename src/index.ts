@@ -341,7 +341,7 @@ map.on("moveend", function(e) {
 
   var boxDistance_km =
     mapBounds.getSouthEast().distanceTo(mapBounds.getSouthWest()) / 1000.0;
-  var desiredCellSize_km = boxDistance_km / 50;
+  var desiredCellSize_km = boxDistance_km / 10;
 
   var newHexgrid = hexGrid(newBbox, desiredCellSize_km, {
     units: "kilometers" as Units
